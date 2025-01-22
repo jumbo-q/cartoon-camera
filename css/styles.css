@@ -226,7 +226,7 @@ button {
     background-color: rgba(0, 0, 0, 0.267);
     cursor: pointer;
     transform: rotate(45deg);
-    background-image: url("../img/move.png");
+    /*background-image: url("../img/move.png");*/
 }
 
 :root {
