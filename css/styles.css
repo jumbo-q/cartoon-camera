@@ -42,28 +42,35 @@ button {
     -webkit-tap-highlight-color: transparent;
     -ms-tap-highlight-color: transparent;
     border: none;
-    border-radius: 50%;
+    border-radius: 15px; /* Changed initial border-radius */
     min-width: 55px;
     min-height: 55px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 32px 32px;
-    margin: 30px 30px;
+    margin: 30px 15px; /* Adjusted horizontal margin for spacing*/
     background-color: rgba(0, 0, 0, 0.267);
     cursor: pointer;
-    transition: background-color 180ms ease-in-out;
+    transition: background-color 180ms ease-in-out, border-radius 180ms ease-in-out; /* Added transition */
+    font-family: "Lato";
+    font-size: 16px;
+    letter-spacing: 6px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.toggler.active {
+    border-radius: 50%; /* Added for circular shape */
+}
+
 
 .toggle-active {
     background-color: #1e97fae3;
 }
 
 #move-button {
-    background-image: url("../img/move.png");
 }
 
 #rotate-button {
-    background-image: url("../img/360.png");
 }
 
 #snap-button {
@@ -114,11 +121,16 @@ button {
 
 #rotate-overlay {
     z-index: 100;
+    display: flex; /* Add flex display */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 #rotate-overlay .lato {
-    position: absolute;
-    transform: translateY(180px);
+    position: relative; /* Changed from absolute */
+    transform: translateY(0); /* Remove translateY */
+    animation: moveUpDown 1.5s infinite ease-in-out; /* Add animation */
 }
+
 #loading-overlay {
     z-index: 80;
     background-color: #2c2c2c8e;
@@ -225,7 +237,6 @@ button {
 
 .arrow-wrap {
     opacity: 0;
-    animation: up-down 800ms ease-in-out forwards infinite 1s, alpha 800ms ease-in-out forwards 1s;
     transform: translate(38px, -75px);
 }
 
@@ -291,7 +302,6 @@ button {
 
 .shadow {
     border: 2px #555555 solid;
-    animation: translateYBack 1s ease-in-out forwards;
     transform-origin: 50% 90%;
 }
 .shadow::after {
@@ -299,33 +309,20 @@ button {
 }
 
 .rotate90 {
-    animation: rotate90 1s ease-in-out forwards;
     transform-origin: 65% 85%;
 }
 
-@keyframes translateYBack {
-    100% {
-        transform: translate(-65px);
-    }
-}
 
-@keyframes up-down {
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
     50% {
-        transform: translate(38px, -62px);
+        transform: translateY(-20px);
     }
 }
 
-@keyframes alpha {
-    100% {
-        opacity: 1;
-    }
-}
 
-@keyframes rotate90 {
-    100% {
-        transform: rotate(90deg) translateY(40px);
-    }
-}
 
 .cssload-wrap {
     display: flex;
