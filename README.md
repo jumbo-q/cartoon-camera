@@ -1,8 +1,10 @@
 # 📸 Cartoon Camera ✨
 
-A marker-based augmented reality camera app for the web! Powered by [AR.js](https://github.com/AR-js-org/AR.js), it's fast, lightweight, and works on any mobile or desktop browser with [WebGL](https://get.webgl.org/) and [WebRTC](https://webrtc.org/). 🤳
+A marker-based augmented reality camera app for the web! Powered by [AR.js](https://github.com/AR-js-org/AR.js), it's fast, lightweight, and works on any mobile or desktop browse
 
 ![cartoon-camera.png](page%2Fassets%2Fcartoon-camera.png)
+
+the picture is created by Stable Diffusion
 
 ## Asset Paths 📁
 
@@ -12,9 +14,7 @@ A marker-based augmented reality camera app for the web! Powered by [AR.js](http
   *   To create a custom marker:
     1.  Use [this tool](https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html) to generate your custom marker. 🛠️
     2.  Export the `.patt` file and place it in `/assets/custom-markers/`.
-    3.  Link it using the `a-marker` tag in `index.html`. [Learn more](https://ar-js-org.github.io/AR.js-Docs/marker-based/#a-frame).
-    4.  Check out [this article](https://ar-js-org.github.io/AR.js-Docs/marker-based/#how-to-choose-good-images-for-pattern-markers) for tips on creating effective custom markers. 💡
-*   **Ready to Play:** Fire up the app and point your camera at the marker. You can find the default hiro marker [here](https://raw.githubusercontent.com/AR-js-org/AR.js/master/data/images/hiro.png). 🕹️
+
 *   **Capture the Moment:** Translate, rotate, or zoom your 3D model to your liking, and then snap a pic! 📸
 
 ---
