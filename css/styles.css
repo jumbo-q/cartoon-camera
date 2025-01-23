@@ -1,5 +1,5 @@
 body {
-    background-color: #3c3c3c;
+    background-color: #000000;
 }
 
 button {
@@ -64,7 +64,7 @@ button {
 
 
 .toggle-active {
-    background-color: #1e97fae3;
+    background-color: #da6d3e;
 }
 
 #move-button {
@@ -108,7 +108,7 @@ button {
 .overlay {
     height: 100%;
     width: 100vw;
-    background-color: #2c2c2c;
+    background-color: #000000;
     position: absolute;
     left: 0;
     top: 0;
@@ -347,7 +347,7 @@ button {
     color: #fff;
     left: 5px;
 }
-
+/*todo: del this animation*/
 .cssload-cssload-spinner {
     position: relative;
     transform-style: preserve-3d;
@@ -364,7 +364,7 @@ button {
     animation: cssload-spin 1.275s ease-in-out infinite both reverse;
 }
 .cssload-cssload-spinner:before {
-    border-color: rgb(51, 167, 255);
+    border-color: rgba(51, 167, 255, 0);
     position: absolute;
 }
 .cssload-cssload-spinner:after {
