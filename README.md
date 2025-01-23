@@ -12,8 +12,8 @@ the picture is created by Stable Diffusion
 *   **Markers:**
   *   The app defaults to the [hiro marker](https://raw.githubusercontent.com/AR-js-org/AR.js/master/data/images/hiro.png). 🎯
   *   To create a custom marker:
-    1.  Use [this tool](https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html) to generate your custom marker. 🛠️
-    2.  Export the `.patt` file and place it in `/assets/custom-markers/`.
+1.  Use [this tool](https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html) to generate your custom marker. 🛠️
+2.  Export the `.patt` file and place it in `/assets/custom-markers/`.
 
 *   **Capture the Moment:** Translate, rotate, or zoom your 3D model to your liking, and then snap a pic! 📸
 
