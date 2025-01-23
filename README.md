@@ -1,6 +1,6 @@
 # Cartoon Camera
 A marker based augmented reality camera app for the web. Powered by [AR.js](https://github.com/AR-js-org/AR.js). Fast, light-weight and works on any mobile/desktop browser with [WebGL](https://get.webgl.org/) and [WebRTC](https://webrtc.org/).
-
+![cartoon-camera.png](page%2Fassets%2Fcartoon-camera.png)
 ## Asset Path
 
 -  3D model in `/assets/3d-models/` and link it using `a-entity` tag in `index.html`. [Learn more](https://ar-js-org.github.io/AR.js-Docs/marker-based/#a-frame).
