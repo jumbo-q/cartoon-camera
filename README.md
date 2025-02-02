@@ -17,6 +17,4 @@ the picture is created by Stable Diffusion
 
 *   **Capture the Moment:** Translate, rotate, or zoom your 3D model to your liking, and then snap a pic! 📸
 
----
 
-**Created by QI JUNBO, Community Computing Lab** 🧑‍💻🔬
